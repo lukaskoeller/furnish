@@ -5,3 +5,4 @@ Delivering a first class furnishing experience right on your phone. Choose furni
 
 ## Learning Resources
 * https://stfalconcom.medium.com/augmented-reality-with-swift-5-how-to-start-19118c77dffe
+* https://www.youtube.com/watch?v=XqRVfB521Fo
