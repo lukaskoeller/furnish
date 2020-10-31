@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C56468BB254DDA670075CAC1 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C56468B7254DDA670075CAC1 /* toy_biplane.usdz */; };
+		C56468BC254DDA670075CAC1 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C56468B8254DDA670075CAC1 /* chair_swan.usdz */; };
 		C5D71783254B7D3E00D100AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D71782254B7D3E00D100AF /* AppDelegate.swift */; };
 		C5D71785254B7D3E00D100AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D71784254B7D3E00D100AF /* ContentView.swift */; };
-		C5D71787254B7D3F00D100AF /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C5D71786254B7D3F00D100AF /* Experience.rcproject */; };
 		C5D71789254B7D4300D100AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D71788254B7D4300D100AF /* Assets.xcassets */; };
 		C5D7178C254B7D4300D100AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D7178B254B7D4300D100AF /* Preview Assets.xcassets */; };
 		C5D71797254B7D4300D100AF /* furnishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D71796254B7D4300D100AF /* furnishTests.swift */; };
@@ -34,10 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C56468B7254DDA670075CAC1 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		C56468B8254DDA670075CAC1 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
 		C5D7177F254B7D3E00D100AF /* furnish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = furnish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D71782254B7D3E00D100AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5D71784254B7D3E00D100AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C5D71786254B7D3F00D100AF /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		C5D71788254B7D4300D100AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5D7178B254B7D4300D100AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5D7178D254B7D4300D100AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C56468B5254DDA1C0075CAC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C56468B8254DDA670075CAC1 /* chair_swan.usdz */,
+				C56468B7254DDA670075CAC1 /* toy_biplane.usdz */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C5D71776254B7D3E00D100AF = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +110,8 @@
 			children = (
 				C5D71782254B7D3E00D100AF /* AppDelegate.swift */,
 				C5D71784254B7D3E00D100AF /* ContentView.swift */,
-				C5D71786254B7D3F00D100AF /* Experience.rcproject */,
 				C5D71788254B7D4300D100AF /* Assets.xcassets */,
+				C56468B5254DDA1C0075CAC1 /* Models */,
 				C5D7178D254B7D4300D100AF /* Info.plist */,
 				C5D7178A254B7D4300D100AF /* Preview Content */,
 			);
@@ -237,6 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5D7178C254B7D4300D100AF /* Preview Assets.xcassets in Resources */,
+				C56468BB254DDA670075CAC1 /* toy_biplane.usdz in Resources */,
+				C56468BC254DDA670075CAC1 /* chair_swan.usdz in Resources */,
 				C5D71789254B7D4300D100AF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +277,6 @@
 			files = (
 				C5D71785254B7D3E00D100AF /* ContentView.swift in Sources */,
 				C5D71783254B7D3E00D100AF /* AppDelegate.swift in Sources */,
-				C5D71787254B7D3F00D100AF /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +435,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"furnish/Preview Content\"";
+				DEVELOPMENT_TEAM = 95JF9H5TWU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = furnish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,6 +456,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"furnish/Preview Content\"";
+				DEVELOPMENT_TEAM = 95JF9H5TWU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = furnish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
