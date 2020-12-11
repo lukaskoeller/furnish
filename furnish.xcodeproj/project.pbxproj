@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C547291C258289E90072A791 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547291B258289E90072A791 /* Store.swift */; };
 		C56468BB254DDA670075CAC1 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C56468B7254DDA670075CAC1 /* toy_biplane.usdz */; };
 		C56468BC254DDA670075CAC1 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C56468B8254DDA670075CAC1 /* chair_swan.usdz */; };
 		C5D71783254B7D3E00D100AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D71782254B7D3E00D100AF /* AppDelegate.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C547291B258289E90072A791 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		C56468B7254DDA670075CAC1 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		C56468B8254DDA670075CAC1 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
 		C5D7177F254B7D3E00D100AF /* furnish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = furnish.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C547291A258289BC0072A791 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C547291B258289E90072A791 /* Store.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C56468B5254DDA1C0075CAC1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		C5D71781254B7D3E00D100AF /* furnish */ = {
 			isa = PBXGroup;
 			children = (
+				C547291A258289BC0072A791 /* Views */,
 				C5D71782254B7D3E00D100AF /* AppDelegate.swift */,
 				C5D71784254B7D3E00D100AF /* ContentView.swift */,
 				C5D71788254B7D4300D100AF /* Assets.xcassets */,
@@ -275,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C547291C258289E90072A791 /* Store.swift in Sources */,
 				C5D71785254B7D3E00D100AF /* ContentView.swift in Sources */,
 				C5D71783254B7D3E00D100AF /* AppDelegate.swift in Sources */,
 			);
