@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80EFAD4425DDB7C70050C61A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EFAD4325DDB7C70050C61A /* Helper.swift */; };
+		80EFAD4925DDBB880050C61A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EFAD4825DDBB880050C61A /* Models.swift */; };
 		C56468BB254DDA670075CAC1 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C56468B7254DDA670075CAC1 /* toy_biplane.usdz */; };
 		C56468BC254DDA670075CAC1 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C56468B8254DDA670075CAC1 /* chair_swan.usdz */; };
 		C581446125895E7E001B4B9C /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C581446025895E7E001B4B9C /* Store.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80EFAD4325DDB7C70050C61A /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		80EFAD4825DDBB880050C61A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		C56468B7254DDA670075CAC1 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		C56468B8254DDA670075CAC1 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
 		C581446025895E7E001B4B9C /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Store.swift; path = furnish/Store.swift; sourceTree = SOURCE_ROOT; };
@@ -123,6 +127,8 @@
 				C547291A258289BC0072A791 /* Views */,
 				C5D71782254B7D3E00D100AF /* AppDelegate.swift */,
 				C5D71784254B7D3E00D100AF /* ContentView.swift */,
+				80EFAD4325DDB7C70050C61A /* Helper.swift */,
+				80EFAD4825DDBB880050C61A /* Models.swift */,
 				C5D71788254B7D4300D100AF /* Assets.xcassets */,
 				C56468B5254DDA1C0075CAC1 /* Models */,
 				C5D7178D254B7D4300D100AF /* Info.plist */,
@@ -293,6 +299,8 @@
 				C581446125895E7E001B4B9C /* Store.swift in Sources */,
 				C5D71785254B7D3E00D100AF /* ContentView.swift in Sources */,
 				C5D71783254B7D3E00D100AF /* AppDelegate.swift in Sources */,
+				80EFAD4425DDB7C70050C61A /* Helper.swift in Sources */,
+				80EFAD4925DDBB880050C61A /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

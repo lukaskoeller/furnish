@@ -32,10 +32,12 @@ struct ContentView : View {
 //
 //    }()
     
-     private var models: [String] = ["chair_swan", "toy_bigplane"]
+    let models = Bundle.main.decode([Model].self, from: "models.json")
+    
+    //private var models: [String] = ["chair_swan", "toy_bigplane"]
     
     var body: some View {
-        Navigator(models: self.models)
+        Navigator(models: models)
     }
 }
 
@@ -54,7 +56,7 @@ struct ARViewContainer: UIViewRepresentable {
 }
 
 struct Navigator: View {
-    var models: [String]
+    var models: [Model]
     
     var body: some View {
         TabView {

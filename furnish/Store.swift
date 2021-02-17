@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct Store: View {
-    var models: [String]
+    var models: [Model]
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(0 ..< models.count) {
-                    index in
+                ForEach(models) {
+                    model in
                     HStack {
-                        Image(uiImage: UIImage(named: models[index])!)
+                        Image(uiImage: UIImage(named: model.file)!)
                             .resizable()
                             .frame(height: 60)
                             .aspectRatio(1/1, contentMode: .fit)
-                        Text(models[index])
+                        Text(model.name)
 
                         Spacer()
                         Image(systemName: "plus")
