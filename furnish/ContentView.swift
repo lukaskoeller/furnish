@@ -9,10 +9,33 @@ import SwiftUI
 import RealityKit
 
 struct ContentView : View {
-    private var models: [String] = ["chair_swan", "toy_bigplane"]
+//    private var models: [String] = {
+//        // Dynamically get our model file names
+//        let filemanager = FileManager.default
+//
+//        guard let path = Bundle.main.resourcePath,
+//              let files = try?
+//                filemanager.contentsOfDirectory(atPath: path) else {
+//                return []
+//        }
+//
+//        var availableModels: [String] = []
+//        for filename in files where filename.hasSuffix("usdz") {
+//            let modelName = filename.replacingOccurrences(of: ".usdz", with: "")
+//            availableModels.append(modelName)
+//        }
+//
+//        availableModels.append("chair_swan")
+//
+//        print(availableModels)
+//        return availableModels
+//
+//    }()
+    
+     private var models: [String] = ["chair_swan", "toy_bigplane"]
     
     var body: some View {
-        Navigator(models: models)
+        Navigator(models: self.models)
     }
 }
 
@@ -35,8 +58,9 @@ struct Navigator: View {
     
     var body: some View {
         TabView {
-            Store(models: models)
             
+            Store(models: models)
+
             ARViewContainer().tabItem {
                 Image(systemName: "hexagon")
                 Text("Planing")

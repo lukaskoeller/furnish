@@ -2,7 +2,7 @@
 //  Store.swift
 //  furnish
 //
-//  Created by Lukas Köller on 10.12.20.
+//  Created by Lukas Köller on 15.12.20.
 //
 
 import SwiftUI
@@ -13,15 +13,15 @@ struct Store: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(0 ..< self.models.count) {
+                ForEach(0 ..< models.count) {
                     index in
                     HStack {
-                        Image(uiImage: UIImage(named: self.models[index])!)
+                        Image(uiImage: UIImage(named: models[index])!)
                             .resizable()
                             .frame(height: 60)
                             .aspectRatio(1/1, contentMode: .fit)
-                        Text(self.models[index])
-                        
+                        Text(models[index])
+
                         Spacer()
                         Image(systemName: "plus")
                     }
@@ -35,9 +35,7 @@ struct Store: View {
 }
 
 //struct Store_Previews: PreviewProvider {
-//    var models: [String]
-//
 //    static var previews: some View {
-//        Store(models: models)
+//        Store()
 //    }
 //}

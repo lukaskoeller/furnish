@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C547291C258289E90072A791 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547291B258289E90072A791 /* Store.swift */; };
 		C56468BB254DDA670075CAC1 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C56468B7254DDA670075CAC1 /* toy_biplane.usdz */; };
 		C56468BC254DDA670075CAC1 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C56468B8254DDA670075CAC1 /* chair_swan.usdz */; };
+		C581446125895E7E001B4B9C /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C581446025895E7E001B4B9C /* Store.swift */; };
+		C5CC0EEF25CF16A400B12EDE /* models.json in Resources */ = {isa = PBXBuildFile; fileRef = C5CC0EEE25CF16A400B12EDE /* models.json */; };
 		C5D71783254B7D3E00D100AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D71782254B7D3E00D100AF /* AppDelegate.swift */; };
 		C5D71785254B7D3E00D100AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D71784254B7D3E00D100AF /* ContentView.swift */; };
 		C5D71789254B7D4300D100AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D71788254B7D4300D100AF /* Assets.xcassets */; };
@@ -36,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C547291B258289E90072A791 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		C56468B7254DDA670075CAC1 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		C56468B8254DDA670075CAC1 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
+		C581446025895E7E001B4B9C /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Store.swift; path = furnish/Store.swift; sourceTree = SOURCE_ROOT; };
+		C5CC0EEE25CF16A400B12EDE /* models.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = models.json; sourceTree = "<group>"; };
 		C5D7177F254B7D3E00D100AF /* furnish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = furnish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D71782254B7D3E00D100AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5D71784254B7D3E00D100AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,7 +83,7 @@
 		C547291A258289BC0072A791 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C547291B258289E90072A791 /* Store.swift */,
+				C581446025895E7E001B4B9C /* Store.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +127,7 @@
 				C56468B5254DDA1C0075CAC1 /* Models */,
 				C5D7178D254B7D4300D100AF /* Info.plist */,
 				C5D7178A254B7D4300D100AF /* Preview Content */,
+				C5CC0EEE25CF16A400B12EDE /* models.json */,
 			);
 			path = furnish;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				C5D7178C254B7D4300D100AF /* Preview Assets.xcassets in Resources */,
 				C56468BB254DDA670075CAC1 /* toy_biplane.usdz in Resources */,
 				C56468BC254DDA670075CAC1 /* chair_swan.usdz in Resources */,
+				C5CC0EEF25CF16A400B12EDE /* models.json in Resources */,
 				C5D71789254B7D4300D100AF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C547291C258289E90072A791 /* Store.swift in Sources */,
+				C581446125895E7E001B4B9C /* Store.swift in Sources */,
 				C5D71785254B7D3E00D100AF /* ContentView.swift in Sources */,
 				C5D71783254B7D3E00D100AF /* AppDelegate.swift in Sources */,
 			);

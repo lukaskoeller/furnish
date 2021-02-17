@@ -1,0 +1,10 @@
+{
+    {
+        "name": "Chair",
+        "file": "chair_swan",
+    },
+    {
+        "name": "Airplane",
+        "file": "toy_bigplane",
+    },
+}
