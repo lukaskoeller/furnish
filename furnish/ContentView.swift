@@ -60,7 +60,6 @@ struct Navigator: View {
     
     var body: some View {
         TabView {
-            
             Store(models: models)
 
             ARViewContainer().tabItem {

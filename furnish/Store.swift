@@ -16,14 +16,7 @@ struct Store: View {
                 ForEach(models) {
                     model in
                     HStack {
-                        Image(uiImage: UIImage(named: model.file)!)
-                            .resizable()
-                            .frame(height: 60)
-                            .aspectRatio(1/1, contentMode: .fit)
-                        Text(model.name)
-
-                        Spacer()
-                        Image(systemName: "plus")
+                        StoreItem(model: model)
                     }
                 }
             }.navigationTitle("Furniture")
@@ -35,7 +28,9 @@ struct Store: View {
 }
 
 //struct Store_Previews: PreviewProvider {
+//    var models: [Model]
+//
 //    static var previews: some View {
-//        Store()
+//        Store(models: models)
 //    }
 //}
