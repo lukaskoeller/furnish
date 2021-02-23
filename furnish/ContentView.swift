@@ -41,31 +41,13 @@ struct ContentView : View {
     }
 }
 
-struct ARViewContainer: UIViewRepresentable {
-    
-    func makeUIView(context: Context) -> ARView {
-        
-        let arView = ARView(frame: .zero)
-        
-        return arView
-        
-    }
-    
-    func updateUIView(_ uiView: ARView, context: Context) {}
-    
-}
-
 struct Navigator: View {
     var models: [Model]
     
     var body: some View {
         TabView {
             Store(models: models)
-
-            ARViewContainer().tabItem {
-                Image(systemName: "hexagon")
-                Text("Planing")
-            }
+            Planner()
         }
     }
 }
