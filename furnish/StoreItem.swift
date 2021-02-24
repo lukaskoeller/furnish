@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StoreItem: View {
     var model: Model
+    @Binding var selectedModel: String?
 
     var body: some View {
         Image(uiImage: UIImage(named: model.file)!)
@@ -18,7 +19,12 @@ struct StoreItem: View {
         Text(model.name)
 
         Spacer()
-        Image(systemName: "plus")
+        Button(action: {
+            print("DEBUG: set selectedModel")
+            selectedModel = model.name
+        }) {
+            Image(systemName: "plus")
+        }
     }
 }
 

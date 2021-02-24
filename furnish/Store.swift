@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Store: View {
     var models: [Model]
+    @Binding var selectedModel: String?
     
     var body: some View {
         NavigationView {
@@ -16,7 +17,7 @@ struct Store: View {
                 ForEach(models) {
                     model in
                     HStack {
-                        StoreItem(model: model)
+                        StoreItem(model: model, selectedModel: $selectedModel)
                     }
                 }
             }.navigationTitle("Furniture")
