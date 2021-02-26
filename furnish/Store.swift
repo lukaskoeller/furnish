@@ -8,19 +8,14 @@
 import SwiftUI
 
 struct Store: View {
-    var models: [Model]
-    @Binding var selectedModel: String?
+    // @Binding var selectedModel: String?
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(models) {
-                    model in
-                    HStack {
-                        StoreItem(model: model, selectedModel: $selectedModel)
-                    }
-                }
-            }.navigationTitle("Furniture")
+            List(models) { model in
+                StoreItem(model: model)
+            }
+            .navigationTitle("Furniture")
         }.tabItem {
             Image(systemName: "bed.double")
             Text("Store")

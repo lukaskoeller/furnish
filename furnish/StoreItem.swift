@@ -9,29 +9,29 @@ import SwiftUI
 
 struct StoreItem: View {
     var model: Model
-    @Binding var selectedModel: String?
+    // @Binding var selectedModel: String?
 
     var body: some View {
-        Image(uiImage: UIImage(named: model.file)!)
-            .resizable()
-            .frame(height: 60)
-            .aspectRatio(1/1, contentMode: .fit)
-        Text(model.name)
+        HStack {
+            Image(uiImage: UIImage(named: model.file)!)
+                .resizable()
+                .frame(height: 60)
+                .aspectRatio(1/1, contentMode: .fit)
+            Text(model.name)
 
-        Spacer()
-        Button(action: {
-            print("DEBUG: set selectedModel")
-            selectedModel = model.name
-        }) {
-            Image(systemName: "plus")
+            Spacer()
+            Button(action: {
+                print("DEBUG: set selectedModel")
+                // selectedModel = model.name
+            }) {
+                Image(systemName: "plus")
+            }
         }
     }
 }
 
-//struct StoreItem_Previews: PreviewProvider {
-//    var model: Model
-//
-//    static var previews: some View {
-//        StoreItem(model: model)
-//    }
-//}
+struct StoreItem_Previews: PreviewProvider {
+    static var previews: some View {
+        StoreItem(model: models[0])
+    }
+}
