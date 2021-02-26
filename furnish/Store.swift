@@ -23,10 +23,8 @@ struct Store: View {
     }
 }
 
-//struct Store_Previews: PreviewProvider {
-//    var models: [Model]
-//
-//    static var previews: some View {
-//        Store(models: models)
-//    }
-//}
+struct Store_Previews: PreviewProvider {
+    static var previews: some View {
+        Store()
+    }
+}
