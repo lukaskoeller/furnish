@@ -11,7 +11,7 @@
 		80087DF525E5AE5700BF360E /* Planner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80087DF425E5AE5700BF360E /* Planner.swift */; };
 		8078B79425E9B890005C8EF4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8078B79325E9B890005C8EF4 /* ModelData.swift */; };
 		80DA4EB125DF207C00727423 /* StoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DA4EB025DF207C00727423 /* StoreItem.swift */; };
-		80EFAD4925DDBB880050C61A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EFAD4825DDBB880050C61A /* Models.swift */; };
+		80EFAD4925DDBB880050C61A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EFAD4825DDBB880050C61A /* Model.swift */; };
 		C56468BB254DDA670075CAC1 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C56468B7254DDA670075CAC1 /* toy_biplane.usdz */; };
 		C56468BC254DDA670075CAC1 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C56468B8254DDA670075CAC1 /* chair_swan.usdz */; };
 		C581446125895E7E001B4B9C /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C581446025895E7E001B4B9C /* Store.swift */; };
@@ -46,7 +46,7 @@
 		80087DF425E5AE5700BF360E /* Planner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planner.swift; sourceTree = "<group>"; };
 		8078B79325E9B890005C8EF4 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		80DA4EB025DF207C00727423 /* StoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StoreItem.swift; path = furnish/StoreItem.swift; sourceTree = SOURCE_ROOT; };
-		80EFAD4825DDBB880050C61A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		80EFAD4825DDBB880050C61A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C56468B7254DDA670075CAC1 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		C56468B8254DDA670075CAC1 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
 		C581446025895E7E001B4B9C /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Store.swift; path = furnish/Store.swift; sourceTree = SOURCE_ROOT; };
@@ -93,7 +93,7 @@
 		8078B78C25E9B5CD005C8EF4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				80EFAD4825DDBB880050C61A /* Models.swift */,
+				80EFAD4825DDBB880050C61A /* Model.swift */,
 				8078B79325E9B890005C8EF4 /* ModelData.swift */,
 			);
 			path = Model;
@@ -328,7 +328,7 @@
 				C5D71785254B7D3E00D100AF /* ContentView.swift in Sources */,
 				C5D71783254B7D3E00D100AF /* AppDelegate.swift in Sources */,
 				8078B79425E9B890005C8EF4 /* ModelData.swift in Sources */,
-				80EFAD4925DDBB880050C61A /* Models.swift in Sources */,
+				80EFAD4925DDBB880050C61A /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

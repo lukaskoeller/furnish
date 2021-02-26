@@ -11,5 +11,9 @@ import SwiftUI
 struct Model: Codable, Identifiable {
     var id: UUID
     var name: String
-    var file: String
+    
+    private var file: String
+    var image: Image {
+        Image(file)
+    }
 }

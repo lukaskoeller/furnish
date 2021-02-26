@@ -13,12 +13,10 @@ struct StoreItem: View {
 
     var body: some View {
         HStack {
-            Image(uiImage: UIImage(named: model.file)!)
+            model.image
                 .resizable()
-                .frame(height: 60)
-                .aspectRatio(1/1, contentMode: .fit)
+                .frame(width: 50, height: 50)
             Text(model.name)
-
             Spacer()
             Button(action: {
                 print("DEBUG: set selectedModel")
