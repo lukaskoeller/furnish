@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealityKit
+import ARKit
 
 struct Planner: View {
     var body: some View {
@@ -33,6 +34,24 @@ struct ARViewContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
         
         let arView = ARView(frame: .zero)
+        
+//        arView.automaticallyConfigureSession = false
+//        let configuration = ARWorldTrackingConfiguration()
+//        configuration.sceneReconstruction = .meshWithClassification
+//
+//        let configuration = ARWorldTrackingConfiguration()
+//        configuration.planeDetection = [.horizontal, .vertical]
+//        configuration.environmentTexturing = .automatic
+//
+//        if
+//            ARWorldTrackingConfiguration
+//                .supportsSceneReconstruction(.mesh) {
+//            configuration.sceneReconstruction = .mesh
+//        }
+
+//        arView.debugOptions.insert(.showSceneUnderstanding)
+//
+//        arView.session.run(configuration)
         
         return arView
         
