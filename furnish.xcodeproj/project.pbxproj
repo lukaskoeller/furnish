@@ -20,26 +20,7 @@
 		C5D71785254B7D3E00D100AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D71784254B7D3E00D100AF /* ContentView.swift */; };
 		C5D71789254B7D4300D100AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D71788254B7D4300D100AF /* Assets.xcassets */; };
 		C5D7178C254B7D4300D100AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D7178B254B7D4300D100AF /* Preview Assets.xcassets */; };
-		C5D71797254B7D4300D100AF /* furnishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D71796254B7D4300D100AF /* furnishTests.swift */; };
-		C5D717A2254B7D4300D100AF /* furnishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D717A1254B7D4300D100AF /* furnishUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C5D71793254B7D4300D100AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5D71777254B7D3E00D100AF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C5D7177E254B7D3E00D100AF;
-			remoteInfo = furnish;
-		};
-		C5D7179E254B7D4300D100AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5D71777254B7D3E00D100AF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C5D7177E254B7D3E00D100AF;
-			remoteInfo = furnish;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8003721625E5A47A00C4CCE5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,30 +38,14 @@
 		C5D71788254B7D4300D100AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5D7178B254B7D4300D100AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5D7178D254B7D4300D100AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5D71792254B7D4300D100AF /* furnishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = furnishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D71796254B7D4300D100AF /* furnishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = furnishTests.swift; sourceTree = "<group>"; };
 		C5D71798254B7D4300D100AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5D7179D254B7D4300D100AF /* furnishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = furnishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D717A1254B7D4300D100AF /* furnishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = furnishUITests.swift; sourceTree = "<group>"; };
 		C5D717A3254B7D4300D100AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C5D7177C254B7D3E00D100AF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5D7178F254B7D4300D100AF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5D7179A254B7D4300D100AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -141,8 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				C5D7177F254B7D3E00D100AF /* furnish.app */,
-				C5D71792254B7D4300D100AF /* furnishTests.xctest */,
-				C5D7179D254B7D4300D100AF /* furnishUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,42 +172,6 @@
 			productReference = C5D7177F254B7D3E00D100AF /* furnish.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C5D71791254B7D4300D100AF /* furnishTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C5D717A9254B7D4300D100AF /* Build configuration list for PBXNativeTarget "furnishTests" */;
-			buildPhases = (
-				C5D7178E254B7D4300D100AF /* Sources */,
-				C5D7178F254B7D4300D100AF /* Frameworks */,
-				C5D71790254B7D4300D100AF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C5D71794254B7D4300D100AF /* PBXTargetDependency */,
-			);
-			name = furnishTests;
-			productName = furnishTests;
-			productReference = C5D71792254B7D4300D100AF /* furnishTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C5D7179C254B7D4300D100AF /* furnishUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C5D717AC254B7D4300D100AF /* Build configuration list for PBXNativeTarget "furnishUITests" */;
-			buildPhases = (
-				C5D71799254B7D4300D100AF /* Sources */,
-				C5D7179A254B7D4300D100AF /* Frameworks */,
-				C5D7179B254B7D4300D100AF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C5D7179F254B7D4300D100AF /* PBXTargetDependency */,
-			);
-			name = furnishUITests;
-			productName = furnishUITests;
-			productReference = C5D7179D254B7D4300D100AF /* furnishUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -256,14 +183,6 @@
 				TargetAttributes = {
 					C5D7177E254B7D3E00D100AF = {
 						CreatedOnToolsVersion = 12.1;
-					};
-					C5D71791254B7D4300D100AF = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = C5D7177E254B7D3E00D100AF;
-					};
-					C5D7179C254B7D4300D100AF = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = C5D7177E254B7D3E00D100AF;
 					};
 				};
 			};
@@ -281,8 +200,6 @@
 			projectRoot = "";
 			targets = (
 				C5D7177E254B7D3E00D100AF /* furnish */,
-				C5D71791254B7D4300D100AF /* furnishTests */,
-				C5D7179C254B7D4300D100AF /* furnishUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,20 +215,6 @@
 				C56468BC254DDA670075CAC1 /* chair_swan.usdz in Resources */,
 				C5CC0EEF25CF16A400B12EDE /* models.json in Resources */,
 				C5D71789254B7D4300D100AF /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5D71790254B7D4300D100AF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5D7179B254B7D4300D100AF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,36 +235,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5D7178E254B7D4300D100AF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C5D71797254B7D4300D100AF /* furnishTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5D71799254B7D4300D100AF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C5D717A2254B7D4300D100AF /* furnishUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C5D71794254B7D4300D100AF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C5D7177E254B7D3E00D100AF /* furnish */;
-			targetProxy = C5D71793254B7D4300D100AF /* PBXContainerItemProxy */;
-		};
-		C5D7179F254B7D4300D100AF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C5D7177E254B7D3E00D100AF /* furnish */;
-			targetProxy = C5D7179E254B7D4300D100AF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C5D717A4254B7D4300D100AF /* Debug */ = {
@@ -526,90 +400,6 @@
 			};
 			name = Release;
 		};
-		C5D717AA254B7D4300D100AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 95JF9H5TWU;
-				INFOPLIST_FILE = furnishTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = furnish.furnishTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/furnish.app/furnish";
-			};
-			name = Debug;
-		};
-		C5D717AB254B7D4300D100AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 95JF9H5TWU;
-				INFOPLIST_FILE = furnishTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = furnish.furnishTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/furnish.app/furnish";
-			};
-			name = Release;
-		};
-		C5D717AD254B7D4300D100AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 95JF9H5TWU;
-				INFOPLIST_FILE = furnishUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = furnish.furnishUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = furnish;
-			};
-			name = Debug;
-		};
-		C5D717AE254B7D4300D100AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 95JF9H5TWU;
-				INFOPLIST_FILE = furnishUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = furnish.furnishUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = furnish;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -627,24 +417,6 @@
 			buildConfigurations = (
 				C5D717A7254B7D4300D100AF /* Debug */,
 				C5D717A8254B7D4300D100AF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C5D717A9254B7D4300D100AF /* Build configuration list for PBXNativeTarget "furnishTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C5D717AA254B7D4300D100AF /* Debug */,
-				C5D717AB254B7D4300D100AF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C5D717AC254B7D4300D100AF /* Build configuration list for PBXNativeTarget "furnishUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C5D717AD254B7D4300D100AF /* Debug */,
-				C5D717AE254B7D4300D100AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

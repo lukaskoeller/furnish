@@ -7,16 +7,7 @@
 
 import SwiftUI
 
-struct ContentView : View {
-    var body: some View {
-        Navigator()
-    }
-}
-
-struct Navigator: View {
-    // @State private var selectedModel: String?
-    // @State private var modelConfirmedForPlacement: String?
-    
+struct ContentView: View {
     var body: some View {
         TabView {
             Store()
@@ -26,7 +17,7 @@ struct Navigator: View {
 }
 
 #if DEBUG
-struct ContentView_Previews : PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }

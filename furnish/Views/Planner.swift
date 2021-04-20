@@ -35,29 +35,35 @@ struct ARViewContainer: UIViewRepresentable {
         
         let arView = ARView(frame: .zero)
         
-//        arView.automaticallyConfigureSession = false
-//        let configuration = ARWorldTrackingConfiguration()
-//        configuration.sceneReconstruction = .meshWithClassification
-//
-//        let configuration = ARWorldTrackingConfiguration()
-//        configuration.planeDetection = [.horizontal, .vertical]
-//        configuration.environmentTexturing = .automatic
-//
-//        if
-//            ARWorldTrackingConfiguration
-//                .supportsSceneReconstruction(.mesh) {
-//            configuration.sceneReconstruction = .mesh
-//        }
+        // See https://developer.apple.com/documentation/arkit/content_anchors/visualizing_and_interacting_with_a_reconstructed_scene
+        arView.automaticallyConfigureSession = false
+        let configuration = ARWorldTrackingConfiguration()
+        configuration.planeDetection = [.horizontal, .vertical] // Smooths flat surfaces
+        configuration.sceneReconstruction = .meshWithClassification
+        configuration.environmentTexturing = .automatic
 
-//        arView.debugOptions.insert(.showSceneUnderstanding)
-//
-//        arView.session.run(configuration)
+        // add sceneReconstruction if device supports Lidar
+        if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
+            configuration.sceneReconstruction = .mesh
+        }
+
+        arView.debugOptions.insert(.showSceneUnderstanding)
+
+        arView.session.run(configuration)
         
         return arView
         
     }
     
-    func updateUIView(_ uiView: ARView, context: Context) {}
+    func updateUIView(_ uiView: ARView, context: Context) {
+        // Places model into the scene
+        let filename = "chair_swan.usdz"
+        let modelEntity = try!ModelEntity.load(named: filename)
+        let anchorEntity = AnchorEntity(plane: .any)
+        anchorEntity.addChild(modelEntity)
+        
+        uiView.scene.addAnchor(anchorEntity)
+    }
     
 }
 

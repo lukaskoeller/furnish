@@ -22,7 +22,8 @@ struct StoreItem: View {
                 print("DEBUG: set selectedModel")
                 // selectedModel = model.name
             }) {
-                Image(systemName: "plus")
+//                Image(systemName: "plus")
+                Text("Add")
             }
         }
     }
