@@ -12,8 +12,12 @@ struct Search: View {
 
     var body: some View {
         NavigationView {
-            Text("Hello, World!")
-                .navigationTitle("Welcome!")
+            List {
+                ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
+                    Text(key)
+                }
+            }
+            .navigationTitle("Welcome!")
         }.tabItem {
             Image(systemName: "magnifyingglass")
             Text("Search")
