@@ -6,8 +6,20 @@
 //
 
 import Foundation
+import Combine
 
-var models: [Model] = load("models.json")
+final class ModelData: ObservableObject {
+    @Published var models: [Model] = load("models.json")
+    
+//    var categories: [String: [Model]] {
+//        Dictionary(
+//            grouping: models,
+//            by: { $0.category.rawValue }
+//        )
+//    }
+}
+
+//var models: [Model] = load("models.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

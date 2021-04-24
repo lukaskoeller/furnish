@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         TabView {
             Store()
+            Search()
             Planner()
         }
     }
@@ -20,6 +21,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }
 #endif

@@ -9,10 +9,11 @@ import SwiftUI
 
 struct Store: View {
     // @Binding var selectedModel: String?
+    @EnvironmentObject var modelData: ModelData
     
     var body: some View {
         NavigationView {
-            List(models) { model in
+            List(modelData.models) { model in
                 StoreItem(model: model)
             }
             .navigationTitle("Furniture")
@@ -26,5 +27,6 @@ struct Store: View {
 struct Store_Previews: PreviewProvider {
     static var previews: some View {
         Store()
+            .environmentObject(ModelData())
     }
 }

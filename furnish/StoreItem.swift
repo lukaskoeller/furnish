@@ -30,6 +30,8 @@ struct StoreItem: View {
 }
 
 struct StoreItem_Previews: PreviewProvider {
+    static var models = ModelData().models
+    
     static var previews: some View {
         StoreItem(model: models[0])
     }
