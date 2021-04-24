@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Store()
             Search()
+            Store()
             Planner()
         }
     }

@@ -2,13 +2,13 @@
     {
         "id": "e5a7b533-39c8-4c08-91e9-052a81fbe0df",
         "name": "Chair",
-        "category": "chair",
+        "category": "chairs",
         "file": "chair_swan"
     },
     {
         "id": "733f764f-19cd-484e-a740-ae8a0ca61a04",
         "name": "Airplane",
-        "category": "table",
+        "category": "tables",
         "file": "toy_bigplane"
     }
 ]
