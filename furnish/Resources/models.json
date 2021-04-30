@@ -1,50 +1,90 @@
 [
     {
         "id": "e5a7b533-39c8-4c08-91e9-052a81fbe0df",
-        "name": "Chair",
+        "name": "Cool Chair",
         "category": "chairs",
+        "categories": {
+            "rooms": ["Wohnzimmer", "Badezimmer", "Schlafzimmer"],
+            "furniture": ["Stühle"],
+            "style": ["Landhausstil", "Skandinavisch"]
+        },
         "file": "chair_swan"
     },
     {
         "id": "75624865-01f3-4a18-94a0-a9057aa047a8",
-        "name": "Chair",
+        "name": "Red Chair",
         "category": "chairs",
+        "categories": {
+            "rooms": ["Wohnzimmer", "Badezimmer", "Schlafzimmer"],
+            "furniture": ["Stühle"],
+            "style": ["Landhausstil", "Skandinavisch"]
+        },
         "file": "chair_swan"
     },
     {
         "id": "1d371a2f-6cd4-4660-92b9-6fc180ca1b17",
-        "name": "Chair",
+        "name": "AR Stuhl",
         "category": "chairs",
+        "categories": {
+            "rooms": ["Wohnzimmer", "Badezimmer", "Schlafzimmer"],
+            "furniture": ["Stühle"],
+            "style": ["Landhausstil", "Skandinavisch"]
+        },
         "file": "chair_swan"
     },
     {
         "id": "83342a14-b4d8-4567-88df-bc5469c2cfb0",
-        "name": "Chair",
+        "name": "Furnisher Room",
         "category": "chairs",
+        "categories": {
+            "rooms": ["Wohnzimmer", "Badezimmer", "Schlafzimmer"],
+            "furniture": ["Stühle"],
+            "style": ["Landhausstil", "Skandinavisch"]
+        },
         "file": "chair_swan"
     },
     {
         "id": "84e192e3-f299-4dd3-ac16-4991b241fa75",
-        "name": "Chair",
+        "name": "Beriner Stuhl",
         "category": "chairs",
+        "categories": {
+            "rooms": ["Wohnzimmer", "Badezimmer", "Schlafzimmer"],
+            "furniture": ["Stühle"],
+            "style": ["Landhausstil", "Skandinavisch"]
+        },
         "file": "chair_swan"
     },
     {
         "id": "5b003adb-2a73-4ac1-a6ca-7984879f82d6",
-        "name": "Chair",
+        "name": "Yada Stuhl",
         "category": "chairs",
+        "categories": {
+            "rooms": ["Wohnzimmer", "Badezimmer", "Schlafzimmer"],
+            "furniture": ["Stühle"],
+            "style": ["Landhausstil", "Skandinavisch"]
+        },
         "file": "chair_swan"
     },
     {
         "id": "2597dc3f-9f64-4c5e-a354-d7f228a336ae",
-        "name": "Chair",
+        "name": "Avicii Lay me Down",
         "category": "chairs",
+        "categories": {
+            "rooms": ["Wohnzimmer", "Badezimmer", "Schlafzimmer"],
+            "furniture": ["Tische"],
+            "style": ["Landhausstil", "Skandinavisch"]
+        },
         "file": "chair_swan"
     },
     {
         "id": "733f764f-19cd-484e-a740-ae8a0ca61a04",
-        "name": "Airplane",
+        "name": "Wake me up",
         "category": "tables",
+        "categories": {
+            "rooms": ["Wohnzimmer", "Badezimmer", "Schlafzimmer"],
+            "furniture": ["Tische"],
+            "style": ["Landhausstil", "Skandinavisch"]
+        },
         "file": "toy_bigplane"
     }
 ]

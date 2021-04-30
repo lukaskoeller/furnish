@@ -14,7 +14,9 @@ struct Store: View {
     var body: some View {
         NavigationView {
             List(modelData.models) { model in
-                StoreItem(model: model)
+                NavigationLink(destination: ProductDetail(model: model)) {
+                    StoreItem(model: model)
+                }
             }
             .navigationTitle("Furniture")
         }.tabItem {

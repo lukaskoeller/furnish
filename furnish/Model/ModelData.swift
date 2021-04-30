@@ -17,6 +17,31 @@ final class ModelData: ObservableObject {
             by: { $0.category.rawValue }
         )
     }
+    
+    var rooms: [String: [Model]] = [:]
+    var furniture: [String: [Model]] = [:]
+    var style: [String: [Model]] = [:]
+    
+    init() {
+        
+        models.forEach { model in
+            model.categories.rooms.forEach { cat in
+                rooms[cat.rawValue, default: []].append(model)
+            }
+        }
+        
+        models.forEach { model in
+            model.categories.furniture.forEach { cat in
+                rooms[cat.rawValue, default: []].append(model)
+            }
+        }
+        
+        models.forEach { model in
+            model.categories.style.forEach { cat in
+                rooms[cat.rawValue, default: []].append(model)
+            }
+        }
+    }
 }
 
 //var models: [Model] = load("models.json")
