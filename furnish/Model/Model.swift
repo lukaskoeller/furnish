@@ -12,11 +12,11 @@ struct Model: Codable, Identifiable {
     var id: UUID
     var name: String
     
-    var category: Category
-    enum Category: String, CaseIterable, Codable {
-        case chairs = "chairs"
-        case tables = "tables"
-    }
+//    var category: Category
+//    enum Category: String, CaseIterable, Codable {
+//        case chairs = "chairs"
+//        case tables = "tables"
+//    }
     
     var categories: Categories
     struct Categories: Codable {

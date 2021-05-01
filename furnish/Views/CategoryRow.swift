@@ -38,7 +38,7 @@ struct CategoryRow_Previews: PreviewProvider {
     
     static var previews: some View {
         CategoryRow(
-            categoryName: models[0].category.rawValue,
+            categoryName: models[0].categories.rooms[0].rawValue,
             items: Array(models.prefix(4))
         )
     }

@@ -11,12 +11,12 @@ import Combine
 final class ModelData: ObservableObject {
     @Published var models: [Model] = load("models.json")
     
-    var categories: [String: [Model]] {
-        Dictionary(
-            grouping: models,
-            by: { $0.category.rawValue }
-        )
-    }
+//    var categories: [String: [Model]] {
+//        Dictionary(
+//            grouping: models,
+//            by: { $0.category.rawValue }
+//        )
+//    }
     
     var rooms: [String: [Model]] = [:]
     var furniture: [String: [Model]] = [:]
