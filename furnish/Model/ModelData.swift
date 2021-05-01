@@ -10,6 +10,8 @@ import Combine
 
 final class ModelData: ObservableObject {
     @Published var models: [Model] = load("models.json")
+
+//    var categories: Categories = load("categories.json")
     
 //    var categories: [String: [Model]] {
 //        Dictionary(
@@ -18,30 +20,34 @@ final class ModelData: ObservableObject {
 //        )
 //    }
     
-    var rooms: [String: [Model]] = [:]
+    var livingAreas: [String: [Model]] = [:]
     var furniture: [String: [Model]] = [:]
-    var style: [String: [Model]] = [:]
+    var furnishingStyles: [String: [Model]] = [:]
     
     init() {
         
         models.forEach { model in
-            model.categories.rooms.forEach { cat in
-                rooms[cat.rawValue, default: []].append(model)
+            model.categories.livingAreas.forEach { cat in
+                livingAreas[cat.rawValue, default: []].append(model)
             }
         }
         
         models.forEach { model in
             model.categories.furniture.forEach { cat in
-                rooms[cat.rawValue, default: []].append(model)
+                furniture[cat.rawValue, default: []].append(model)
             }
         }
         
         models.forEach { model in
-            model.categories.style.forEach { cat in
-                rooms[cat.rawValue, default: []].append(model)
+            model.categories.furnishingStyles.forEach { cat in
+                furnishingStyles[cat.rawValue, default: []].append(model)
             }
         }
     }
+}
+
+final class CategoryData: ObservableObject {
+    @Published var categories: Categories = load("categories.json")
 }
 
 //var models: [Model] = load("models.json")

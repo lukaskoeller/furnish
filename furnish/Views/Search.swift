@@ -13,8 +13,8 @@ struct Search: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(modelData.rooms.keys.sorted(), id: \.self) { key in
-                    CategoryRow(categoryName: key, items: modelData.rooms[key]!)
+                ForEach(modelData.livingAreas.keys.sorted(), id: \.self) { key in
+                    CategoryRow(categoryName: key, items: modelData.livingAreas[key]!)
                 }
                 .listRowInsets(EdgeInsets())
             }

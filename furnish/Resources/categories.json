@@ -1,0 +1,40 @@
+{
+    "livingAreas": [
+        {
+            "name": "Wohnzimmer",
+            "file": "livingRoom"
+        },
+        {
+            "name": "Badezimmer",
+            "file": "bathroom"
+        },
+        {
+            "name": "Schlafzimmer",
+            "file": "bedroom"
+        }
+    ],
+    "furniture": [
+        {
+            "name": "Stühle",
+            "file": "chairs"
+        },
+        {
+            "name": "Tische",
+            "file": "tables"
+        },
+        {
+            "name": "Sofas",
+            "file": "sofas"
+        },
+    ],
+    "furnishingStyles": [
+        {
+            "name": "Skandinavisch",
+            "file": "scandinavian"
+        },
+        {
+            "name": "Landhausstil",
+            "file": "coutryStyle"
+        }
+    ]
+}

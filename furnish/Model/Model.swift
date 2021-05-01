@@ -20,9 +20,9 @@ struct Model: Codable, Identifiable {
     
     var categories: Categories
     struct Categories: Codable {
-        var rooms: [LivingAreas]
+        var livingAreas: [LivingAreas]
         var furniture: [Furniture]
-        var style: [FurnishingStyles]
+        var furnishingStyles: [FurnishingStyles]
     }
     
     private var file: String
