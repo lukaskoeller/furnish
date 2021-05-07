@@ -11,13 +11,16 @@ import SwiftUI
 struct Categories: Codable {
     var livingAreas: [Category]
     var furniture: [Category]
-    var furnishingStyle: [Category]
+    var furnishingStyles: [Category]
 }
 
-struct Category: Codable {
+struct Category: Codable, Identifiable {
+    var id: UUID = UUID()
     var name: String
-    var file: String
+    private var file: String
     var image: Image {
         Image(file)
     }
+    
+    private enum CodingKeys : String, CodingKey { case name, file }
 }

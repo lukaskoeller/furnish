@@ -11,21 +11,45 @@
         {
             "name": "Schlafzimmer",
             "file": "bedroom"
+        },
+        {
+            "name": "Küche",
+            "file": "kitchen"
+        },
+        {
+            "name": "Home Office",
+            "file": "homeOffice"
         }
     ],
     "furniture": [
         {
             "name": "Stühle",
-            "file": "chairs"
+            "file": "cube.transparent"
         },
         {
             "name": "Tische",
-            "file": "tables"
+            "file": "loupe"
         },
         {
             "name": "Sofas",
-            "file": "sofas"
+            "file": "network"
         },
+        {
+            "name": "Kleiderschränke",
+            "file": "archivebox"
+        },
+        {
+            "name": "Betten",
+            "file": "bed.double"
+        },
+        {
+            "name": "Badmöbel",
+            "file": "shippingbox"
+        },
+        {
+            "name": "Küchengeräte",
+            "file": "figure.walk"
+        }
     ],
     "furnishingStyles": [
         {

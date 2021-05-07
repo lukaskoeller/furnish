@@ -1,13 +1,13 @@
 //
-//  CategoryRow.swift
+//  SingleGallery.swift
 //  furnish
 //
-//  Created by Lukas Köller on 24.04.21.
+//  Created by Lukas Köller on 07.05.21.
 //
 
 import SwiftUI
 
-struct CategoryRow: View {
+struct SingleGallery: View {
     var categoryName: String
     var items: [Model]
     
@@ -23,7 +23,7 @@ struct CategoryRow: View {
                     ForEach(items) {
                         model in
                         NavigationLink(destination: ProductDetail(model: model)) {
-                            CategoryItem(model: model)
+                            SingleGalleryItem(model: model)
                         }
                     }
                 }
@@ -33,7 +33,7 @@ struct CategoryRow: View {
     }
 }
 
-struct CategoryRow_Previews: PreviewProvider {
+struct SingleGallery_Previews: PreviewProvider {
     static var models = ModelData().models
     
     static var previews: some View {

@@ -9,12 +9,14 @@ import SwiftUI
 
 struct Search: View {
     @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var categoryData: CategoryData
 
     var body: some View {
         NavigationView {
             List {
+                DoubleGallery(heading: "Räume", items: categoryData.categories.livingAreas)
                 ForEach(modelData.livingAreas.keys.sorted(), id: \.self) { key in
-                    CategoryRow(categoryName: key, items: modelData.livingAreas[key]!)
+                    SingleGallery(categoryName: key, items: modelData.livingAreas[key]!)
                 }
                 .listRowInsets(EdgeInsets())
             }
@@ -30,5 +32,6 @@ struct Search_Previews: PreviewProvider {
     static var previews: some View {
         Search()
             .environmentObject(ModelData())
+            .environmentObject(CategoryData())
     }
 }
