@@ -37,7 +37,7 @@ struct SingleGallery_Previews: PreviewProvider {
     static var models = ModelData().models
     
     static var previews: some View {
-        CategoryRow(
+        SingleGallery(
             categoryName: models[0].categories.furnishingStyles[0].rawValue,
             items: Array(models.prefix(4))
         )

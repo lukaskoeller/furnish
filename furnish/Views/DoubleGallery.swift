@@ -42,7 +42,7 @@ struct DoubleGallery_Previews: PreviewProvider {
     static var categories = CategoryData().categories
     
     static var previews: some View {
-        Rooms(
+        DoubleGallery(
             heading: "Räume",
             items: categories.livingAreas
         )

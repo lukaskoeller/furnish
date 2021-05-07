@@ -27,6 +27,6 @@ struct SingleGalleryItem: View {
 
 struct SingleGalleryItem_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryItem(model: ModelData().models[0])
+        SingleGalleryItem(model: ModelData().models[0])
     }
 }
