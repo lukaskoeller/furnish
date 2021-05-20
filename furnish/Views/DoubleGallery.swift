@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct DoubleGallery: View {
-    var heading: String
     var items: [Category]
     
     var spacing: CGFloat = 12
@@ -20,20 +19,14 @@ struct DoubleGallery: View {
     ]
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(heading)
-                .font(.headline)
-                .padding(.top, 5)
-            
-            ScrollView(.horizontal, showsIndicators: false) {
-                LazyHGrid(rows: layout, alignment: .top, spacing: spacing) {
-                    ForEach(items) { livingArea in
-                        DoubleGalleryItem(item: livingArea, boxHeight: boxHeight)
-                    }
+        ScrollView(.horizontal, showsIndicators: false) {
+            LazyHGrid(rows: layout, alignment: .top, spacing: spacing) {
+                ForEach(items) { livingArea in
+                    ZCard(item: livingArea, boxHeight: boxHeight)
                 }
-                .frame(height: boxHeight * 2 + spacing)
-//                .padding(.horizontal)
             }
+            .frame(height: boxHeight * 2 + spacing)
+//                .padding(.horizontal)
         }
     }
 }
@@ -42,9 +35,6 @@ struct DoubleGallery_Previews: PreviewProvider {
     static var categories = CategoryData().categories
     
     static var previews: some View {
-        DoubleGallery(
-            heading: "Räume",
-            items: categories.livingAreas
-        )
+        DoubleGallery(items: categories.livingAreas)
     }
 }

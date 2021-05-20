@@ -34,12 +34,19 @@ struct Model: Codable, Identifiable {
 enum Furniture: String, CaseIterable, Codable {
     case chairs = "Stühle"
     case tables = "Tische"
+    case sofas = "Sofas"
+    case closets = "Kleiderschränke"
+    case beds = "Betten"
+    case bathroomFurniture = "Badmöbel"
+    case kitchenAppliances = "Küchengeräte"
 }
 
 enum LivingAreas: String, CaseIterable, Codable {
     case livingRoom = "Wohnzimmer"
     case bedroom = "Schlafzimmer"
     case bathroom = "Badezimmer"
+    case kitchen = "Küche"
+    case homeOffice = "Home Office"
 }
 
 enum FurnishingStyles: String, CaseIterable, Codable {

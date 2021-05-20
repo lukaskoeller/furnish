@@ -13,14 +13,24 @@ struct Search: View {
 
     var body: some View {
         NavigationView {
-            List {
-                DoubleGallery(heading: "Räume", items: categoryData.categories.livingAreas)
+            ScrollView {
+//                List(categoryData.categories.furniture) { item in
+//                    HStack {
+//                        item.icon
+//                        Text(item.name)
+//                        Spacer()
+//                        Image(systemName: "chevron.right")
+//                    }
+//                }
+                SectionBox(heading: "Räume") {
+                    DoubleGallery(items: categoryData.categories.livingAreas)
+                }
                 ForEach(modelData.livingAreas.keys.sorted(), id: \.self) { key in
-                    SingleGallery(categoryName: key, items: modelData.livingAreas[key]!)
+                    SingleGallery(items: modelData.livingAreas[key]!, size: 185)
                 }
                 .listRowInsets(EdgeInsets())
             }
-            .navigationTitle("Welcome!")
+            .navigationTitle("furnish")
         }.tabItem {
             Image(systemName: "magnifyingglass")
             Text("Search")

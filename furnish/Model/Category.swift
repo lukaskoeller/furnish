@@ -21,6 +21,9 @@ struct Category: Codable, Identifiable {
     var image: Image {
         Image(file)
     }
+    var icon: Image {
+        Image(systemName: file)
+    }
     
     private enum CodingKeys : String, CodingKey { case name, file }
 }
