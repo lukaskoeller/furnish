@@ -14,6 +14,8 @@
 		805AA03F26570489008C5B57 /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805AA03E26570489008C5B57 /* VCard.swift */; };
 		805AA041265704E0008C5B57 /* ZCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805AA040265704E0008C5B57 /* ZCard.swift */; };
 		805AA045265705A3008C5B57 /* SectionBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805AA044265705A3008C5B57 /* SectionBox.swift */; };
+		805AA04726598CAA008C5B57 /* VCardGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805AA04626598CAA008C5B57 /* VCardGallery.swift */; };
+		805AA04926598D51008C5B57 /* ZCardGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805AA04826598D51008C5B57 /* ZCardGallery.swift */; };
 		8078B79425E9B890005C8EF4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8078B79325E9B890005C8EF4 /* ModelData.swift */; };
 		80984153263DD72900216C42 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 80984152263DD72900216C42 /* categories.json */; };
 		80984155263DED6E00216C42 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80984154263DED6E00216C42 /* Category.swift */; };
@@ -41,6 +43,8 @@
 		805AA03E26570489008C5B57 /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
 		805AA040265704E0008C5B57 /* ZCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZCard.swift; sourceTree = "<group>"; };
 		805AA044265705A3008C5B57 /* SectionBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBox.swift; sourceTree = "<group>"; };
+		805AA04626598CAA008C5B57 /* VCardGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCardGallery.swift; sourceTree = "<group>"; };
+		805AA04826598D51008C5B57 /* ZCardGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZCardGallery.swift; sourceTree = "<group>"; };
 		8078B79325E9B890005C8EF4 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		80984152263DD72900216C42 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
 		80984154263DED6E00216C42 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 		C547291A258289BC0072A791 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				805AA04626598CAA008C5B57 /* VCardGallery.swift */,
+				805AA04826598D51008C5B57 /* ZCardGallery.swift */,
 				80087DF425E5AE5700BF360E /* Planner.swift */,
 				C5D71784254B7D3E00D100AF /* ContentView.swift */,
 				802391F526337515009F89A3 /* Search.swift */,
@@ -260,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80087DF525E5AE5700BF360E /* Planner.swift in Sources */,
+				805AA04726598CAA008C5B57 /* VCardGallery.swift in Sources */,
 				80984159263DF9CE00216C42 /* CategoryData.swift in Sources */,
 				805AA041265704E0008C5B57 /* ZCard.swift in Sources */,
 				80DA4EB125DF207C00727423 /* StoreItem.swift in Sources */,
@@ -272,6 +279,7 @@
 				802391F626337515009F89A3 /* Search.swift in Sources */,
 				8078B79425E9B890005C8EF4 /* ModelData.swift in Sources */,
 				80984155263DED6E00216C42 /* Category.swift in Sources */,
+				805AA04926598D51008C5B57 /* ZCardGallery.swift in Sources */,
 				805AA03F26570489008C5B57 /* VCard.swift in Sources */,
 				80A1222F26459F7000FD1A03 /* DoubleGallery.swift in Sources */,
 				80EED8022635EEEF00F4682D /* ProductDetail.swift in Sources */,

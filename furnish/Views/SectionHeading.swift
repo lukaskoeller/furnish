@@ -12,9 +12,11 @@ struct SectionHeading: View {
     
     var body: some View {
         Text(name)
-            .font(.headline)
+            .font(.title)
+            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
 //            .padding(.leading, 15)
             .padding(.top, 5)
+            .padding(.horizontal)
     }
 }
 

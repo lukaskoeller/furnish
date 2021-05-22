@@ -14,21 +14,30 @@ struct Search: View {
     var body: some View {
         NavigationView {
             ScrollView {
-//                List(categoryData.categories.furniture) { item in
-//                    HStack {
-//                        item.icon
-//                        Text(item.name)
-//                        Spacer()
-//                        Image(systemName: "chevron.right")
-//                    }
-//                }
                 SectionBox(heading: "Räume") {
-                    DoubleGallery(items: categoryData.categories.livingAreas)
+                    ZCardGallery(items: categoryData.categories.livingAreas)
                 }
-                ForEach(modelData.livingAreas.keys.sorted(), id: \.self) { key in
-                    SingleGallery(items: modelData.livingAreas[key]!, size: 185)
+                SectionBox(heading: "Kategorien") {
+                    List(categoryData.categories.furniture) { item in
+                        HStack {
+                            item.icon
+                            Text(item.name)
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                        }
+                    }
+                    .frame(height: CGFloat(categoryData.categories.furniture.count) * 44)
                 }
-                .listRowInsets(EdgeInsets())
+                SectionBox(heading: "Stile") {
+                    DoubleGallery(items: categoryData.categories.furnishingStyles)
+                }
+                SectionBox(heading: "Inspiration") {
+                    VCardGallery(items: modelData.models, size: 130)
+                }
+//                ForEach(modelData.livingAreas.keys.sorted(), id: \.self) { key in
+//                    SingleGallery(items: modelData.livingAreas[key]!, size: 185)
+//                }
+//                .listRowInsets(EdgeInsets())
             }
             .navigationTitle("furnish")
         }.tabItem {

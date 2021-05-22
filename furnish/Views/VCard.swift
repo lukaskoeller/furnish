@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct VCard: View {
-    var model: Model
+    var item: Model
     
     var body: some View {
         VStack(alignment: .leading) {
-            model.image
+            item.image
                 .renderingMode(.original)
                 .resizable()
                 .frame(width: 155, height: 155)
                 .cornerRadius(5)
-            Text(model.name)
+            Text(item.name)
                 .foregroundColor(.primary)
                 .font(.caption)
         }
@@ -27,6 +27,6 @@ struct VCard: View {
 
 struct VCard_Previews: PreviewProvider {
     static var previews: some View {
-        VCard(model: ModelData().models[0])
+        VCard(item: ModelData().models[0])
     }
 }

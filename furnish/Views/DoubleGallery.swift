@@ -26,7 +26,7 @@ struct DoubleGallery: View {
                 }
             }
             .frame(height: boxHeight * 2 + spacing)
-//                .padding(.horizontal)
+            .padding(.horizontal)
         }
     }
 }

@@ -1,36 +1,37 @@
 //
-//  SingleGallery.swift
+//  VCardGallery.swift
 //  furnish
 //
-//  Created by Lukas Köller on 07.05.21.
+//  Created by Lukas Köller on 22.05.21.
 //
 
 import SwiftUI
 
-struct SingleGallery: View {
+struct VCardGallery: View {
     var items: [Model]
     var size: CGFloat
-    
+
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .top, spacing: 0) {
                 ForEach(items) {
-                    model in
-                    NavigationLink(destination: ProductDetail(model: model)) {
-                        VCard(item: model)
+                    item in
+                    NavigationLink(destination: ProductDetail(model: item)) {
+                        VCard(item: item)
                     }
                 }
             }
+            .padding(.horizontal)
         }
         .frame(height: size)
     }
 }
 
-struct SingleGallery_Previews: PreviewProvider {
+struct VCardGallery_Previews: PreviewProvider {
     static var models = ModelData().models
-    
+
     static var previews: some View {
-        SingleGallery(
+        VCardGallery(
             items: Array(models.prefix(4)),
             size: 185
         )

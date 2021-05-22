@@ -58,7 +58,27 @@
         },
         {
             "name": "Landhausstil",
-            "file": "coutryStyle"
+            "file": "countryStyle"
+        },
+        {
+            "name": "Minimalismus",
+            "file": "minimalism"
+        },
+        {
+            "name": "Modern Country",
+            "file": "modernCountry"
+        },
+        {
+            "name": "Modern",
+            "file": "modern"
+        },
+        {
+            "name": "Hygge",
+            "file": "hygge"
+        },
+        {
+            "name": "Maritim",
+            "file": "maritime"
         }
     ]
 }
