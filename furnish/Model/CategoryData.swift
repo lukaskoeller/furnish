@@ -9,6 +9,6 @@ import Foundation
 import Combine
 import SwiftUI
 
-//final class CategoryData: ObservableObject {
-//    @Published var categories: Categories = load("categories.json")
-//}
+final class CategoryData: ObservableObject {
+    @Published var categories: Categories = load("categories.json")
+}

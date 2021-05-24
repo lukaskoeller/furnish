@@ -46,10 +46,6 @@ final class ModelData: ObservableObject {
     }
 }
 
-final class CategoryData: ObservableObject {
-    @Published var categories: Categories = load("categories.json")
-}
-
 //var models: [Model] = load("models.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
